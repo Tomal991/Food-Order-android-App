@@ -37,7 +37,7 @@ public class OrderActivity extends AppCompatActivity {
                 int radiobuttonid = myradiogroup.getCheckedRadioButtonId();
                 myradiobutton = findViewById(radiobuttonid);
                 quantity = myradiobutton.getText().toString().trim();
-                myDB.addGuest(food, price, quantity);
+                myDB.addOrder(food, price, quantity);
                 Intent i = new Intent(OrderActivity.this, MainActivity2.class);
                 startActivity(i);
             }

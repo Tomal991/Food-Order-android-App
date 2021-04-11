@@ -78,7 +78,7 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    void addGuest(String food, String price, String quantity){
+    void addOrder(String food, String price, String quantity){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
