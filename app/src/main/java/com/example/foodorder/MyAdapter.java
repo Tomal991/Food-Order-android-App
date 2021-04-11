@@ -20,13 +20,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private Context context;
     private Activity activity;
     private ArrayList id, food, price, quan;
 
-    CustomAdapter(Activity activity, Context context, ArrayList id, ArrayList fname, ArrayList price,
+    MyAdapter(Activity activity, Context context, ArrayList id, ArrayList fname, ArrayList price,
                   ArrayList quan) {
         this.activity = activity;
         this.context = context;

@@ -35,7 +35,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     MyDatabaseHelper myDB;
     ArrayList<String> id, food, price, quantity;
-    CustomAdapter adapter;
+    MyAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +62,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         storeDataInArrays();
 
-        adapter = new CustomAdapter(MainActivity2.this,this, id, food, price, quantity);
+        adapter = new MyAdapter(MainActivity2.this,this, id, food, price, quantity);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity2.this));
 
