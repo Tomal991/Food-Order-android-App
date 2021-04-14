@@ -44,7 +44,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="40dp"
         android:text="Update"
-        android:textColor="@color/red2"
+        android:textColor="@color/teal_200"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -55,9 +55,10 @@
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:text="Delete"
-        android:textColor="#9C0303"
+        android:textColor="#E30606"
         android:textAllCaps="false"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+         />
 
 </LinearLayout>

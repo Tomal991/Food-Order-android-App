@@ -1,7 +1,6 @@
 package com.example.foodorder;
 
 
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -62,7 +61,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         storeDataInArrays();
 
-        adapter = new MyAdapter(MainActivity2.this,this, id, food, price, quantity);
+        adapter = new MyAdapter(MainActivity2.this, this, id, food, price, quantity);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity2.this));
 
@@ -71,18 +70,18 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1){
+        if (requestCode == 1) {
             recreate();
         }
     }
 
-    void storeDataInArrays(){
+    void storeDataInArrays() {
         Cursor cursor = myDB.readAllData();
-        if(cursor.getCount() == 0){
+        if (cursor.getCount() == 0) {
             empty_imageview.setVisibility(View.VISIBLE);
             no_data.setVisibility(View.VISIBLE);
-        }else{
-            while (cursor.moveToNext()){
+        } else {
+            while (cursor.moveToNext()) {
                 id.add(cursor.getString(0));
                 food.add(cursor.getString(1));
                 price.add(cursor.getString(2));
@@ -102,10 +101,9 @@ public class MainActivity2 extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.delete_all){
+        if (item.getItemId() == R.id.delete_all) {
             confirmDialog();
-        }
-        else if(item.getItemId() == R.id.logout){
+        } else if (item.getItemId() == R.id.logout) {
             Intent i = new Intent(MainActivity2.this, MainActivity.class);
             startActivity(i);
         }
@@ -113,7 +111,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
 
-    void confirmDialog(){
+    void confirmDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Delete All?");
         builder.setMessage("Are you sure you want to delete all Data?");

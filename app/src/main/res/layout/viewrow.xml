@@ -15,8 +15,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="12dp">
+            android:layout_height="99dp"
+            android:background="@color/red2"
+            android:padding="7dp">
 
             <TextView
                 android:id="@+id/id_txt"
@@ -36,20 +37,20 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:text="Food Name"
-                android:textColor="#000"
+                android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/id_txt"
-                app:layout_constraintTop_toTopOf="@+id/id_txt" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/quantity_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="quantity"
-                android:textStyle="bold"
                 android:textColor="@color/teal_200"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/food_txt"
                 app:layout_constraintTop_toBottomOf="@+id/food_txt" />
 
@@ -58,9 +59,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="price"
+                android:textColor="@color/purple_700"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:textColor="@color/purple_700"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
