@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/teal_200"
     android:orientation="vertical"
     tools:context=".Registration">
 
@@ -12,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registration"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -59,6 +61,7 @@
         android:layout_marginTop="20dp"
         android:onClick="loginPage"
         android:text="Login Here..."
+        android:textColor="@color/red"
         android:textSize="25sp" />
 
 </LinearLayout>

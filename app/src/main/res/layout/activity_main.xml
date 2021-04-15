@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/purple_200"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="35sp"
+        android:textColor="@color/purple_700"
         android:textStyle="bold" />
 
     <EditText
@@ -37,11 +39,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:onClick="login"
         android:textColor="@color/black"
         android:text="Log in"
-        android:textSize="25sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
