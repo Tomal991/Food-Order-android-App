@@ -8,24 +8,24 @@
     android:padding="10dp"
     tools:context=".OrderActivity">
 
-    <EditText
+    <Spinner
         android:id="@+id/food_nameID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:ems="10"
         android:textStyle="bold"
-        android:hint="Food Name"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/priceID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Price"
         android:textStyle="bold"
+        android:textColor="@color/red"
         android:inputType="textPersonName" />
 
 
@@ -34,7 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Please Enter Quantity below"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#0A27C5"/>
 
     <RadioGroup
         android:id="@+id/myradiogroup"
