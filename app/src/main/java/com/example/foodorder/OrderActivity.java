@@ -23,7 +23,7 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
     RadioGroup myradiogroup;
     RadioButton myradiobutton;
     Button order_button;
-    String food, price,price2, quantity;
+    String food, price, price2, quantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
