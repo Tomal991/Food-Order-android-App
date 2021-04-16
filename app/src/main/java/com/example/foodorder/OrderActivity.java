@@ -23,7 +23,7 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
     RadioGroup myradiogroup;
     RadioButton myradiobutton;
     Button order_button;
-    String food, price, quantity;
+    String food, price,price2, quantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,13 +49,13 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
                 int radiobuttonid = myradiogroup.getCheckedRadioButtonId();
                 myradiobutton = findViewById(radiobuttonid);
                 quantity = myradiobutton.getText().toString().trim();
-
                 myDB.addOrder(food, price, quantity);
                 Intent i = new Intent(OrderActivity.this, MainActivity2.class);
                 startActivity(i);
             }
         });
     }
+
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
