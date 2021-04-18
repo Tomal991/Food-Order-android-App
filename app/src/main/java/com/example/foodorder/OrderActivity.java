@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class OrderActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
     String[] foodarr = {"Select", "Cheese Burger", "Beef Burger", "Large Pizza", "Kacchi", "Sandwich"};
 
     Spinner myspinner;
@@ -23,7 +24,7 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
     RadioGroup myradiogroup;
     RadioButton myradiobutton;
     Button order_button;
-    String food, price, price2, quantity;
+    String food, price, quantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
